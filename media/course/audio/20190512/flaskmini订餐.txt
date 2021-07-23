@@ -1,0 +1,7 @@
+export ops_config=local
+7.3
+show create table user;   查看mysql表的创建语句
+利用flask-sqlacodegen快速导入ORM表结构
+flask-sqlacodegen 'mysql://root:@127.0.0.1/food_db' --tables user --outfile "common/models/user.py"  --flask
+
+[{"hotel_id": 64,"hotel_name":"东莞松山湖雅乐轩酒店","hotel_img":"https://xcx.xshkvip.com/static/images/hotel_dg.png"},{"hotel_id": 65,"hotel_name":"惠州博罗佳兆业万怡酒店","hotel_img":"https://xcx.xshkvip.com/static/images/hotel_hz.png"}]

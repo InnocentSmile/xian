@@ -1,0 +1,20 @@
+-i https://pypi.douban.com/simple/
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3eF9vcGVuaWQiOiJ3eDEyMzQ1NiIsImV4cCI6MTU0MjgzNjE5MH0.4TOuDVKFccnXPDRG7-hdEXMsec_EYA4FFih0AQtmeNE
+
+#兑奖码表
+兑奖码  string   生成方式->会员类型(权益标识)+4随机数+时间戳->AES加密字符串
+类型   会员or权益  string
+userid   null   
+是否使用 bool 默认true
+生成时间 datetime
+过期时间 datetime
+兑奖时间 datetime
+
+# 验证码表
+手机号  string
+验证码  string
+创建时间 datetime
+
+
+scp root@47.93.16.140:/var/www/oakvip/tools/data/user.db ./user2.db
